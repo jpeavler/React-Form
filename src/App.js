@@ -13,25 +13,15 @@ import ForgotPasswordForm from './components/ForgotPasswordForm';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
       <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Login</Link>
-            </li>
-            <li>
-              <Link to="/create">Create Account</Link>
-            </li>
-            <li>
-              <Link to="/forgotpassword">Forgot Password?</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+      <header className="App-header">
+          <nav>
+                <Link class="App-link" to="/">Login</Link>
+                <Link class="App-link" to="/create">Create Account</Link>
+                <Link class="App-link" to="/forgotpassword">Forgot Password?</Link>
+          </nav>
+        </header>
         <Switch>
           <Route path="/create">
             <CreateAccountForm />
@@ -45,7 +35,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-      </header>
     </div>
   );
 }

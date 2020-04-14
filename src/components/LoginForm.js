@@ -27,7 +27,7 @@ class LoginForm extends React.Component {
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                <h3>Login here</h3>
+                <h3>Login</h3>
                 <input type="email" placeholder="Email: email@website.com" required
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         name="Email" onChange={this.handleEmail}/>
